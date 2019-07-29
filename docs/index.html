@@ -87,12 +87,28 @@
             <div class="row">
                 <div class="header__tab">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#tab1">پرواز داخلی</a></li>
-                        <li><a data-toggle="tab" href="#tab2">پرواز خارجی</a></li>                       
+                        <li class="active"><a data-toggle="tab" href="#tab1">پرواز داخلی <i class="fa fa-plane"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a data-toggle="tab" href="#tab2">پرواز خارجی <i class="fa fa-globe"
+                                    aria-hidden="true"></i></a></li>
                     </ul>
 
                     <div class="tab-content">
                         <div id="tab1" class="tab-pane fade in active">
+                            <div class="row margin-bottom-10">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <label>
+                                            <input type="radio" name="radio" checked> <span class="label-text">یک
+                                                طرفه</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio"> <span class="label-text">رفت و
+                                                برگشت</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
@@ -121,32 +137,98 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" class="form-control"  placeholder="تاریخ رفت"/>
+                                        <input type="text" class="form-control" placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" class="form-control"  placeholder="تاریخ برگشت"/>
+                                        <input type="text" class="form-control" placeholder="تاریخ برگشت" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
-                                            <i class="fa fa-user-circle-o"></i>
-                                        <input type="text" class="form-control"  placeholder="مسافران (۱ بزرگسال)"/>
+                                        <i class="fa fa-user-circle-o"></i>
+                                        <input type="text" class="form-control" placeholder="مسافران (۱ بزرگسال)" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
-                                        <button class="btn btn-success btn-block">جستجو <i class="fa fa-search" style="margin-right: 5px;font-size: 10px;"></i></button>
+                                        <button class="btn btn-success btn-block">جستجو <i class="fa fa-search"
+                                                style="margin-right: 5px;font-size: 10px;"></i></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div id="tab2" class="tab-pane fade">
-                            <h3>Menu 1</h3>
-                            <p>Some content in menu 1.</p>
-                        </div>                       
+                            <div class="row margin-bottom-10">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <label>
+                                            <input type="radio" name="radio1" checked> <span class="label-text">یک
+                                                طرفه</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio1"> <span class="label-text">رفت و
+                                                برگشت</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio1"> <span class="label-text">چند مسیره</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="">مبدا را انتخاب کنید </option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="">مقصد را انتخاب کنید </option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                            <option value="1">تهران</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <i class="fa fa-calendar-minus-o"></i>
+                                        <input type="text" class="form-control" placeholder="تاریخ رفت" />
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <i class="fa fa-calendar-minus-o"></i>
+                                        <input type="text" class="form-control" placeholder="تاریخ برگشت" />
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <i class="fa fa-user-circle-o"></i>
+                                        <input type="text" class="form-control" placeholder="مسافران (۱ بزرگسال)" />
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group">
+                                        <button class="btn btn-success btn-block">جستجو <i class="fa fa-search"
+                                                style="margin-right: 5px;font-size: 10px;"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
