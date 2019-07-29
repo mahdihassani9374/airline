@@ -12,7 +12,8 @@ body {
     position: relative;
 
     @media(max-width:767px) {
-        padding: 0;
+        padding: 10px 0 0;
+        margin-top: -20px;
     }
 
     .header__title {
@@ -46,7 +47,7 @@ body {
     z-index: 1000;
     position: relative;
     background-color: #fff;
-    box-shadow: 0px 0px 10px #222;
+    box-shadow: 0px 0px 10px #ccc;
 
     img {
         max-height: 50px;
@@ -240,7 +241,20 @@ input[type="checkbox"] + .label-text:before{
 	-webkit-font-smoothing:antialiased;
 	width: 1em;
 	display: inline-block;
-	margin-right: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+.form-check label  {
+    position: relative;
+}
+
+.form-check label  .price {
+    color: #999;
+    position: absolute;
+    left:0;
+    font-size: 14px;
 }
 
 input[type="checkbox"]:checked + .label-text:before{
@@ -345,4 +359,8 @@ label {
 
 .btn {
     outline: none !important;
+}
+
+.width-100 {
+    width:100%;
 }
