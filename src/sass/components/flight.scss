@@ -19,23 +19,100 @@
                 font-weight: 600;
                 font-size: 20px;
                 margin-bottom: 10px;
-                position: relative; 
+                position: relative;
 
                 a {
                     position: absolute;
-                    left:0px;
+                    left: 0px;
                     font-size: 14px;
-                    text-decoration: none; 
+                    text-decoration: none;
                     cursor: pointer;
                     top: 8px;
                 }
             }
         }
+
         .wrapper__main__box {
+            position: relative;
             padding: 10px;
             border-radius: 5px;
             background-color: #fff;
             box-shadow: 0px 0px 10px #ccc;
+            margin-bottom: 15px;
+
+            .wrapper__main__box__item {
+
+                display: flex;
+                align-items: center;
+                padding-right: 40px;
+                justify-content: space-around;
+
+                @media(max-width:767px) {
+                    padding-right: 20px;
+                }
+
+                .wrapper__main__box__item__title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #000;
+                    margin-right: 20px;
+
+                    @media(max-width:767px) {
+                        margin-right: 10px;
+                        font-size: 16px;
+                    }
+                }
+
+                img {
+                    max-width: 60px;
+                }
+
+                .wrapper__main__box__item__price {
+                    text-align: center;
+                    border-right: 1px solid #ccc;
+                    margin-right: 20px;
+                    padding-right: 20px;
+
+                    @media(max-width:767px) {
+                        padding-right: 5px;
+                        margin-right: 0;
+                    }
+
+                    p , h2 { 
+                        margin: 0;
+                    }
+
+                    .wrapper__main__box__item__price__isgreen {
+                        color: green;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .btn {
+                        width:150px;
+                        margin-top: 10px;
+
+                        @media(max-width:767px) {
+                            width:120px;
+                        }
+                    }
+                }
+            }
+
+            &.isSystem::before {
+                content: 'سیستمی ';
+                position: absolute;
+                border: 1px solid #999;
+                transform: rotate(270deg);
+                right: -12px;
+                border-bottom-color: #fff;
+                padding: 2px 7px;
+                border-radius: 5px 5px 0 0;
+                font-size: 16px;
+                color: #999;
+                font-weight: 500;
+                top: 36px;
+            }
         }
     }
 
@@ -112,7 +189,37 @@
     }
 }
 
-.wizard-progress .step.in-progress .node  {
+.wizard-progress .step.in-progress .node {
     border: 6px solid green;
     background-color: #ccc;
+}
+
+.flight {
+    width: 200px;
+    border-bottom: 1px dotted #ccc;
+    margin-right: 20px;
+    position: relative;
+
+    @media(max-width:767px) {
+        display: none;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid green;
+        top: -5px;
+        left: -10px;
+    }
+
+
+    i {
+        position: absolute;
+        color: green;
+        top: -8px;
+        transform: rotate(225deg);
+    }
 }
