@@ -202,6 +202,7 @@ body {
     top: 8px;
     left: 8px;
     color: #969393;
+    z-index: 1;
 }
 
 .nav-tabs>li>a:hover {
@@ -336,4 +337,8 @@ label {
 .form-control:focus {
     border-color: #21ce21;
     box-shadow: inset 0 1px 1px #21ce21, 0 0 8px #21ce21;
+}
+
+.tooltip-inner {
+    font-family: "MyriadArabic";
 }
