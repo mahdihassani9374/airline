@@ -6,7 +6,7 @@ body {
 
 .header {
     background-image: url(../img/header.jpg);
-    padding: 0px 0 70px;
+    padding: 0px 0 140px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -43,12 +43,13 @@ body {
 
     .header__tab {
         background-color: rgba(0,0,0,.5);
-        margin-top: 30px;
+        margin-top: 80px;
         border-radius: 4px;
         padding: 10px;
 
         @media(max-width:767px) {
             border-radius: 0px;
+            margin-top: 30px;
         }
     }
 }
