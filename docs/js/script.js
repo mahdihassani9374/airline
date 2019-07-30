@@ -25,7 +25,20 @@ $(function () {
     startDate: "today"
   }
 
-  $("#example1").pDatepicker();
+  $("[data-role='date-persian']").pDatepicker({
+    autoClose:true,
+    minDate:new Date(),
+    format:"dddd D MMMM YYYY",
+  });
+
+  $("[data-role='date-gregorian']").pDatepicker({
+    autoClose:true,
+    minDate:new Date(),
+    format:"dddd D MMMM YYYY",
+    calendarType:'gregorian'
+  });
+
+
 
   // kamaDatepicker('date-1', customOptions);
   kamaDatepicker('date-2', customOptions);

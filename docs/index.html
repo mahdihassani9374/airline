@@ -24,10 +24,6 @@
     <script src="./lib/jquery-3.1.1/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/bootstrap.min.js"></script>
 
-    <!-- date picker -->
-    <link href="./lib/datepicker/kamadatepicker.min.css" rel="stylesheet" />
-    <script src="./lib/datepicker/kamadatepicker.min.js"></script>
-
     <script src="./js/vue.js"></script>
 
     <script src="./lib/persian-datePicker/persian-date.min.js"></script>
@@ -151,14 +147,14 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" id="example1" autocomplete="off" class="form-control"
+                                        <input type="text" data-role='date-persian' autocomplete="off" class="form-control"
                                             placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" :disabled="air.type == 0 && air.name=='Inside'" id="date-4"
+                                        <input type="text" :disabled="air.type == 0 && air.name=='Inside'" data-role='date-persian'
                                             autocomplete="off" class="form-control" placeholder="تاریخ برگشت" />
                                     </div>
                                 </div>
@@ -258,14 +254,14 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" id="date-1" autocomplete="off" class="form-control"
+                                        <input type="text" data-role='date-gregorian' autocomplete="off" class="form-control"
                                             placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" :disabled="air.type == 0 && air.name=='Outside'" id="date-2"
+                                        <input type="text" :disabled="air.type == 0 && air.name=='Outside'" data-role='date-gregorian'
                                             autocomplete="off" class="form-control" placeholder="تاریخ برگشت" />
                                     </div>
                                 </div>
@@ -310,7 +306,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" id="date-5" autocomplete="off" class="form-control"
+                                        <input type="text" data-role='date-gregorian' autocomplete="off" class="form-control"
                                             placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
@@ -342,7 +338,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" id="date-6" autocomplete="off" class="form-control"
+                                        <input type="text" data-role='date-gregorian' autocomplete="off" class="form-control"
                                             placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
