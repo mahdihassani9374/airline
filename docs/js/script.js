@@ -29,35 +29,18 @@ $(function () {
     autoClose:true,
     minDate:new Date(),
     format:"dddd D MMMM YYYY",
+    selectedDate:null,
+    initialValue:false,
   });
 
   $("[data-role='date-gregorian']").pDatepicker({
     autoClose:true,
     minDate:new Date(),
     format:"dddd D MMMM YYYY",
-    calendarType:'gregorian'
+    calendarType:'gregorian',
+    selectedDate:null,
+    initialValue:false
   });
-
-
-
-  // kamaDatepicker('date-1', customOptions);
-  kamaDatepicker('date-2', customOptions);
-  kamaDatepicker('date-3', customOptions);
-  kamaDatepicker('date-4', customOptions);
-
-  $('#bd-next-date-1').css('color', '#3bac10')
-  $('#bd-next-date-2').css('color', '#3bac10')
-  $('#bd-next-date-3').css('color', '#3bac10')
-  $('#bd-next-date-4').css('color', '#3bac10')
-  $('#bd-next-date-5').css('color', '#3bac10')
-  $('#bd-next-date-6').css('color', '#3bac10')
-  $('#bd-prev-date-1').css('color', '#3bac10')
-  $('#bd-prev-date-2').css('color', '#3bac10')
-  $('#bd-prev-date-3').css('color', '#3bac10')
-  $('#bd-prev-date-4').css('color', '#3bac10')
-  $('#bd-prev-date-5').css('color', '#3bac10')
-  $('#bd-prev-date-6').css('color', '#3bac10')
-
 })
 
 var app = new Vue({
