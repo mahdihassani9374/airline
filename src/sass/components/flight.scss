@@ -30,6 +30,29 @@
                     top: 8px;
                 }
             }
+
+            .wrapper__main__search__item {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 15px;
+
+                .wrapper__main__search__item__title {
+                    color: #222;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .wrapper__main__search__item__icon {
+                    font-size: 30px;
+                    margin-left: 10px;
+                    width: 40px;
+                }
+
+                .wrapper__main__search__item__desc {
+                    color: #666;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
         }
 
         .wrapper__main__box {
