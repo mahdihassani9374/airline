@@ -390,7 +390,7 @@ input[type="checkbox"]:checked+.label-text:before {
     width: 200px;
 
     @media(max-width:767px) {
-        width:100%;
+        width: 100%;
     }
 
     .dropdown-menu__item {
@@ -437,7 +437,8 @@ select {
     }
 }
 
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
     background-color: #5cb85c;
 }
 
@@ -450,7 +451,7 @@ select {
 }
 
 
-.datepicker-plot-area  {
+.datepicker-plot-area {
     font-family: "MyriadArabic";
 }
 
@@ -469,23 +470,92 @@ select {
     font-size: 16px;
 }
 
-.header-row-cell , .toolbox , .datepicker-navigator {
+.header-row-cell,
+.toolbox,
+.datepicker-navigator {
     font-family: "MyriadArabic";
 }
 
-.pwt-btn-today , .pwt-btn-calendar , .datepicker-navigator {
+.pwt-btn-today,
+.pwt-btn-calendar,
+.datepicker-navigator {
     font-size: 16px !important;
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
     background-color: transparent;
     color: #9d9d9d;
 }
 
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #9d9d9d;
 }
 
 .text-success {
     color: green;
 }
+
+.modal-body {
+    min-height: 440px;
+    position: relative;
+
+    @media(max-width:767px) {
+        min-height: calc(100vh - 22px);
+    }
+
+    .nav.nav-pills li {
+        width: 50%;
+
+        a {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+            border-bottom: 2px solid #eee;
+            background-color: #fff !important;
+            border-radius: 0px;
+        }
+        
+    }
+
+    .modal-body__img {
+        max-width: 300px;
+    }
+
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+        background-color: transparent;
+        border-bottom: 2px solid green;
+        border-radius: 0px;
+        color: green;
+    }
+
+    .nav-pills>li+li {
+        margin-right: 0px;
+    }
+
+    .modal-body__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #999;
+        font-size: 22px;
+        z-index: 100000000;
+        cursor: pointer;
+    }
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+@media (max-width:991px) {
+    .col-sm-hide {
+        display: none;
+    }
+}
+
+
+

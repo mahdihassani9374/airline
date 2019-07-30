@@ -55,7 +55,9 @@
                                 <li><a href="./passenger.html"> اطلاعات مسافران </a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> ثبت نام / ورود</a></li>
+                                <li><a data-toggle="modal" data-target="#myModal" data-backdrop="static"
+                                        data-keyboard="false" href="#"><span class="glyphicon glyphicon-log-in"></span>
+                                        ثبت نام / ورود</a></li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
                                             class="glyphicon glyphicon-headphones"></span> پشتیبانی
@@ -740,6 +742,72 @@
         <p>تمامی حقوق مادی و معنوی این سایت متعلق به <a href="#">شرکت هیوا پرواز می باشد </a></p>
         <p>پیاده سازی و توسعه سایت توسط <a href="#">مهدی و مبین حسنی </a></p>
     </footer>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fa fa-arrow-circle-o-right modal-body__close" data-dismiss="modal"
+                        data-target="#myModal"></i>
+                    <div class="col-md-8">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a data-toggle="pill" href="#login">ورود</a></li>
+                            <li><a data-toggle="pill" href="#register">ثبت نام</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="login" class="tab-pane fade in active">
+                                <div class="text-center">
+                                    <img src="./img/icon-lock.svg" />
+                                    <div class="margin-top-10 margin-bottom-10 weight-600">ورود به هیوا پرواز</div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="نام کاربری" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="رمز عبور" />
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-success btn-block">ورود به هیوا پرواز</button>
+                                </div>
+                            </div>
+                            <div id="register" class="tab-pane fade">
+                                <div class="text-center">
+                                    <img src="./img/icon-user.svg" />
+                                    <div class="margin-top-10 margin-bottom-10 weight-600">ورود به هیوا پرواز</div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="نام و نام خانوادگی" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="ایمیل" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="نام کاربری" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="رمز عبور" />
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-success btn-block">ثبت نام در هیوا پرواز</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-hide">
+                        <img src="./img/UserModalPhoto.svg" class="modal-body__img" />
+                        <div class="text-center">
+                            از هم اکنون در خدمت شماییم : <br />
+                            تضمین بهترین قیمت <br />
+                            پشتیبانی 24 ساعته <br />
+                            ضمانت ویژه بلیط
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>
