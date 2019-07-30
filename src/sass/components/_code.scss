@@ -448,3 +448,31 @@ select {
 .padding-10 {
     padding: 10px !important;
 }
+
+
+.datepicker-plot-area  {
+    font-family: "MyriadArabic";
+}
+
+.datepicker-plot-area .header {
+    background-image: none;
+    padding-top: 0px;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td.today span {
+    font-family: "MyriadArabic";
+    font-size: 16px;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td span {
+    font-family: "MyriadArabic";
+    font-size: 16px;
+}
+
+.header-row-cell , .toolbox , .datepicker-navigator {
+    font-family: "MyriadArabic";
+}
+
+.pwt-btn-today , .pwt-btn-calendar , .datepicker-navigator {
+    font-size: 16px !important;
+}

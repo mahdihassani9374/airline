@@ -1,10 +1,5 @@
 $(function () {
-  new WOW().init();
   $('[data-toggle="tooltip"]').tooltip();
-
-  $('.grid').isotope({
-    itemSelector: '.grid-item',
-  });
 
   $('.dropdown-menu').on('click', function (event) {   
     event.stopPropagation();
@@ -30,7 +25,9 @@ $(function () {
     startDate: "today"
   }
 
-  kamaDatepicker('date-1', customOptions);
+  $("#example1").pDatepicker();
+
+  // kamaDatepicker('date-1', customOptions);
   kamaDatepicker('date-2', customOptions);
   kamaDatepicker('date-3', customOptions);
   kamaDatepicker('date-4', customOptions);
