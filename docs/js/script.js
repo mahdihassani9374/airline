@@ -41,6 +41,8 @@ $(function () {
     selectedDate:null,
     initialValue:false
   });
+
+  $('.form-control').val('')
 })
 
 var app = new Vue({
