@@ -184,7 +184,7 @@ body {
 }
 
 .footer {
-    background-color: #555;
+    background-color: #111;
     padding: 20px 0;
     color: #fff;
     text-align: center;
@@ -193,6 +193,11 @@ body {
     a {
         color: #0fc239 !important
     }
+}
+
+.footer-top {
+    height: 400px;
+    background-color: #eaeaea
 }
 
 .navbar-inverse {
