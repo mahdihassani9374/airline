@@ -43,6 +43,21 @@ $(function () {
   });
 
   $('.form-control').val('')
+
+  toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "progressBar": true,
+    "positionClass": "toast-bottom-left",
+    "preventDuplicates": false,
+    "onclick": null,
+    "timeOut": "115000",
+
+  }
+
+  setTimeout(function(){
+    toastr.success('سلام خوش آمدید ')
+  }, 2000);
 })
 
 var app = new Vue({
