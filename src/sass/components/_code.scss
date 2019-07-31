@@ -9,7 +9,8 @@ body {
     padding: 30px 0 100px;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;    
+    position: relative;
+    background-position: center bottom;
 
     @media(max-width:767px) {
         padding: 10px 0 0;
@@ -17,12 +18,12 @@ body {
     }
 
     &::before {
-        position:absolute;
+        position: absolute;
         content: '';
         width: 100%;
         height: 100%;
         top: 0;
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0, 0, 0, 0.3);
         z-index: 0;
     }
 
@@ -46,7 +47,7 @@ body {
 
     .header__tab {
         background-color: rgba(17, 8, 8, 0.4);
-        margin-top: 80px;
+        margin-top: 40px;
         border-radius: 4px;
         padding: 10px;
         position: relative;
@@ -58,12 +59,42 @@ body {
     }
 }
 
+.header-bot {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #eaeaea;
+
+    .header-bot__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .header-bot__item__title {
+            font-size: 20px;
+            color: #222;
+            font-weight: 600;
+        }
+
+        .header-bot__item__desc {
+            font-size: 20px;
+            color: #444;
+            font-weight: 500;
+        }
+
+        .header-bot__item__icon {
+            font-size: 40px;
+            color: #555;
+            margin-left: 10px;
+        }
+    }
+}
+
 .menu {
     padding: 0px 0;
     z-index: 1000;
     position: relative;
     background-color: #fff;
-    box-shadow: 0px 0px 10px #ccc;       
+    box-shadow: 0px 0px 10px #ccc;
 
     @media(max-width:767px) {
         height: auto;
@@ -182,16 +213,16 @@ body {
     &::before {
         content: '';
         position: absolute;
-        width:10px;
+        width: 10px;
         height: 10px;
         background-color: transparent;
         bottom: 0px;
         left: calc(50% - 8px);
         width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 20px solid transparent;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 20px solid transparent;
     }
 }
 
@@ -576,14 +607,16 @@ select {
             background-color: #fff !important;
             border-radius: 0px;
         }
-        
+
     }
 
     .modal-body__img {
         max-width: 300px;
     }
 
-    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    .nav-pills>li.active>a,
+    .nav-pills>li.active>a:focus,
+    .nav-pills>li.active>a:hover {
         background-color: transparent;
         border-bottom: 2px solid green;
         border-radius: 0px;
@@ -615,9 +648,18 @@ select {
     }
 }
 
-.btn-success { background-image: linear-gradient(to left, #8eedda 0%, #2e4e47 100%);transition: all 0.3s;}
-.btn-success:hover { background-image: linear-gradient(to left, #4bc2aa 0%, #2e4e47 100%) !important;}
-.btn-success:focus { background-image: linear-gradient(to left, #96fae6 0%, #1b2b28 100%) !important;}
+.btn-success {
+    background-image: linear-gradient(to left, #8eedda 0%, #2e4e47 100%);
+    transition: all 0.3s;
+}
+
+.btn-success:hover {
+    background-image: linear-gradient(to left, #4bc2aa 0%, #2e4e47 100%) !important;
+}
+
+.btn-success:focus {
+    background-image: linear-gradient(to left, #96fae6 0%, #1b2b28 100%) !important;
+}
 
 .glyphicon {
     font-size: 12px;
@@ -641,7 +683,7 @@ a {
 
 @media (min-width:768px) and (max-width: 991px) {
     .navbar-right {
-        float: right;        
+        float: right;
         width: 100%;
         display: flex;
         align-items: center;
@@ -649,18 +691,16 @@ a {
     }
 }
 
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #fff;
 }
 
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
     color: #fff;
 
     i {
         color: #fff;
     }
 }
-
-
-
-
