@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 100000;
 
     @media(max-width:767px) {
         padding: 10px 0 0;
@@ -42,12 +43,17 @@ body {
 }
 
 .menu {
-    padding: 10px 0;
+    padding: 0px 0;
     border-bottom: 1px solid #e1e1e1;
     z-index: 1000;
     position: relative;
     background-color: #fff;
-    box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0px 0px 10px #ccc; 
+    height: 53px;   
+
+    @media(max-width:767px) {
+        height: auto;
+    }
 
     img {
         max-height: 50px;
@@ -149,17 +155,46 @@ body {
     border-color: transparent;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    border-bottom: 2px solid transparent;
+    transition: border .4s;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width:10px;
+        height: 10px;
+        background-color: transparent;
+        bottom: -6px;
+        left: calc(50% - 8px);
+        transform: rotate(45deg);
+    }
+}
+
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: transparent;
     color: #0fc239 !important;
+    border-bottom: 2px solid;
+    font-weight: 600;
+
+    &::before {
+        background-color: #0fc239;
+    }
 }
 
 .navbar-inverse .navbar-nav>li>a:focus,
 .navbar-inverse .navbar-nav>li>a:hover {
     background-color: transparent;
     color: #0fc239 !important;
+    border-bottom: 2px solid;
+    font-weight: 600;
+
+    &::before {
+        background-color: #0fc239;
+    }
 }
 
 .navbar {
@@ -555,6 +590,13 @@ select {
     .col-sm-hide {
         display: none;
     }
+}
+
+.btn-success {    background-image: linear-gradient(to left, #44ddbf 0%, #3bcf23 51%, #16A085 100%);}
+.btn-success:hover { background-position: left top; }
+
+.glyphicon {
+    font-size: 13px;
 }
 
 
