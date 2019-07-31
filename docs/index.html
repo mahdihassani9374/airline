@@ -77,7 +77,7 @@
     <header class="header">
         <h1 class="header__title">شرکت هواپیمایی هیوا پرواز </h1>
         <div class="header__desc">کامل‌ترین سایت خرید بلیط
-            پروازهای داخلی، پروازهای خارجی، بلیط قطار و بلیط اتوبوس</div>
+            پروازهای داخلی، پروازهای خارجی </div>
         <div class="container">
             <div class="row">
                 <div class="header__tab" id="app">
@@ -110,7 +110,7 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مبدا را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -133,7 +133,7 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مقصد را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -156,14 +156,14 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" data-role='date-persian' autocomplete="off"
+                                        <input type="text" autocomplete="off" data-role='date-persian' autocomplete="off"
                                             class="form-control" placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" :disabled="air.type == 0 && air.name=='Inside'"
+                                        <input type="text" autocomplete="off" :disabled="air.type == 0 && air.name=='Inside'"
                                             data-role='date-persian' autocomplete="off" class="form-control"
                                             placeholder="تاریخ برگشت" />
                                     </div>
@@ -171,7 +171,7 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-user-circle-o"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مسافران (۱ بزرگسال)" />
                                         <div class="dropdown-menu">
                                             <div class="dropdown-menu__item">
@@ -240,7 +240,7 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مبدا را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -263,7 +263,7 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مقصد را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -286,14 +286,14 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" data-role='date-gregorian' autocomplete="off"
+                                        <input type="text" autocomplete="off" data-role='date-gregorian' autocomplete="off"
                                             class="form-control" placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" :disabled="air.type == 0 && air.name=='Outside'"
+                                        <input type="text" autocomplete="off" :disabled="air.type == 0 && air.name=='Outside'"
                                             data-role='date-gregorian' autocomplete="off" class="form-control"
                                             placeholder="تاریخ برگشت" />
                                     </div>
@@ -301,7 +301,7 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-user-circle-o"></i>
-                                        <input type="text" class="form-control" placeholder="مسافران (۱ بزرگسال)" />
+                                        <input type="text" autocomplete="off" class="form-control" placeholder="مسافران (۱ بزرگسال)" />
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-6">
@@ -315,7 +315,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مبدا را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -338,7 +338,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مقصد را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -361,7 +361,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" data-role='date-gregorian' autocomplete="off"
+                                        <input type="text" autocomplete="off" data-role='date-gregorian' autocomplete="off"
                                             class="form-control" placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
@@ -369,7 +369,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مبدا را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -392,7 +392,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group dropdown">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
+                                        <input type="text" autocomplete="off" data-toggle="dropdown" class="form-control dropdown-toggle"
                                             placeholder="مقصد را انتخاب کنید " />
                                         <ul class="dropdown-menu">
                                             <li><a href="#"><i class="fa fa-map-signs" aria-hidden="true"></i> تهران</a>
@@ -415,7 +415,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-calendar-minus-o"></i>
-                                        <input type="text" data-role='date-gregorian' autocomplete="off"
+                                        <input type="text" autocomplete="off" data-role='date-gregorian' autocomplete="off"
                                             class="form-control" placeholder="تاریخ رفت" />
                                     </div>
                                 </div>
@@ -430,7 +430,7 @@
                                 <div class="col-md-3 col-sm-6">
                                     <div class="form-group">
                                         <i class="fa fa-user-circle-o"></i>
-                                        <input type="text" class="form-control" placeholder="مسافران (۱ بزرگسال)" />
+                                        <input type="text" autocomplete="off" class="form-control" placeholder="مسافران (۱ بزرگسال)" />
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6">
@@ -556,7 +556,7 @@
                                     <div class="margin-top-10 margin-bottom-10 weight-600">ورود به هیوا پرواز</div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="نام کاربری" />
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="نام کاربری" />
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control" placeholder="رمز عبور" />
@@ -571,13 +571,13 @@
                                     <div class="margin-top-10 margin-bottom-10 weight-600">ورود به هیوا پرواز</div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="نام و نام خانوادگی" />
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="نام و نام خانوادگی" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="ایمیل" />
+                                    <input type="email" autocomplete="off" class="form-control" placeholder="ایمیل" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="نام کاربری" />
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="نام کاربری" />
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control" placeholder="رمز عبور" />

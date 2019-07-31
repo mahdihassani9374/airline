@@ -9,7 +9,7 @@ body {
     padding: 30px 0 100px;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative;    
 
     @media(max-width:767px) {
         padding: 10px 0 0;
@@ -19,6 +19,8 @@ body {
     .header__title {
         font-family: "MyriadArabic";
         text-align: center;
+        color: #fff;
+        text-shadow: 0px 0px 10px #ccc;
     }
 
     .header__desc {
@@ -26,10 +28,12 @@ body {
         text-align: center;
         margin-top: 10px;
         font-size: 16px;
+        color: #fff;
+        text-shadow: 0px 0px 10px #ccc;
     }
 
     .header__tab {
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(17, 8, 8, 0.4);
         margin-top: 80px;
         border-radius: 4px;
         padding: 10px;
