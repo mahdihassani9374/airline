@@ -48,16 +48,24 @@ $(function () {
     "closeButton": true,
     "debug": false,
     "progressBar": true,
-    "positionClass": "toast-bottom-left",
+    "positionClass": "toast-bottom-right",
     "preventDuplicates": false,
     "onclick": null,
-    "timeOut": "115000",
-
+    "timeOut": "5000",
   }
 
   setTimeout(function(){
     toastr.success('سلام خوش آمدید ')
   }, 2000);
+
+  $('.ladda-button').click(function(e){
+    e.preventDefault();
+    var l = Ladda.create(this);
+    l.start();
+    setTimeout(function(){
+      l.stop()
+    }, 3000);
+ });
 })
 
 var app = new Vue({
