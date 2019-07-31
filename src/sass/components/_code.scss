@@ -602,8 +602,9 @@ select {
     }
 }
 
-.btn-success {  background-image: linear-gradient(to left, #44ddbf 0%, #3bcf23 51%, #16A085 100%);transition: all 0.3s;}
-.btn-success:hover {  background-image: linear-gradient(to right, #44ddbf 0%, #3bcf23 51%, #16A085 100%) !important;}
+.btn-success { background-image: linear-gradient(to left, #8eedda 0%, #2e4e47 100%);transition: all 0.3s;}
+.btn-success:hover { background-image: linear-gradient(to left, #4bc2aa 0%, #2e4e47 100%) !important;}
+.btn-success:focus { background-image: linear-gradient(to left, #96fae6 0%, #1b2b28 100%) !important;}
 
 .glyphicon {
     font-size: 12px;
@@ -623,6 +624,28 @@ select {
 a {
     color: blue;
 
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .navbar-right {
+        float: right;        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #fff;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #fff;
+
+    i {
+        color: #fff;
+    }
 }
 
 

@@ -103,7 +103,8 @@
                             </div>
                         </div>
                         <div class="wrapper__main__box">
-                            کاربر گرامی، بلیط شما رزرو شده و تا     <span class="text-danger weight-600"> 41  ثانیه </span>دیگر معتبر است. لطفا جهت پرداخت وصدور بلیط اقدام کنید.
+                            کاربر گرامی، بلیط شما رزرو شده و تا <span class="text-danger weight-600"> 41 ثانیه
+                            </span>دیگر معتبر است. لطفا جهت پرداخت وصدور بلیط اقدام کنید.
                         </div>
                         <div class="wrapper__main__box">
                             <p>سفر <span class="weight-600">مشهد</span> <i class="fa fa-plane"></i> <span
@@ -111,7 +112,7 @@
                             <p>تاریخ پرواز: چهارشنبه 1398/05/09 ساعت 22:30</p>
                             <p>شرکت انتخاب شده : آسمان</p>
                         </div>
-                        <div class="wrapper__main__box padding-0">                            
+                        <div class="wrapper__main__box padding-0">
                             <div class="padding-10">
                                 <div class="weight-600">اطلاعات رزرو:</div>
                                 <div class="table-responsive">
@@ -145,15 +146,15 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>                                              
-                                                <td>بزرگسال 1</td>                                                
+                                            <tr>
+                                                <td>بزرگسال 1</td>
                                                 <td>Mr mahdi</td>
                                                 <td>hassani</td>
                                                 <td>0018684297</td>
                                                 <td>1386/05/02</td>
                                             </tr>
-                                            <tr>                                              
-                                                <td>بزرگسال 2</td>                                                
+                                            <tr>
+                                                <td>بزرگسال 2</td>
                                                 <td>Mr mahdi</td>
                                                 <td>hassani</td>
                                                 <td>0018684297</td>
@@ -165,24 +166,24 @@
                                 <div class="row">
                                     <div class="col-md-6 pull-right">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered">                                                
+                                            <table class="table table-bordered">
                                                 <tbody>
-                                                    <tr>                                              
-                                                        <td>قیمت</td>                                                                                                        
-                                                        <td>362,000 تومان</td>                                                                                                        
-                                                    </tr>                                                    
-                                                    <tr>                                              
-                                                        <td>مالیات </td>                                                                                                        
-                                                        <td>29,000 تومان</td>                                                                                                        
-                                                    </tr>                                                    
-                                                    <tr>                                              
-                                                        <td>قیمت نهایی </td>                                                                                                        
-                                                        <td>391,800 تومان</td>                                                                                                        
-                                                    </tr>                                                    
-                                                    <tr>                                              
-                                                        <td class="text-success weight-600">مبلغ قابل پرداخت </td>                                                                                                        
-                                                        <td class="text-success weight-600">391,800 تومان</td>                                                                                                        
-                                                    </tr>                                                    
+                                                    <tr>
+                                                        <td>قیمت</td>
+                                                        <td>362,000 تومان</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>مالیات </td>
+                                                        <td>29,000 تومان</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>قیمت نهایی </td>
+                                                        <td>391,800 تومان</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-success weight-600">مبلغ قابل پرداخت </td>
+                                                        <td class="text-success weight-600">391,800 تومان</td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -190,12 +191,26 @@
                                     <div class="col-md-6"></div>
                                 </div>
                             </div>
-                        </div>                        
-                        <div class="wrapper__main__box text-center">                            
+                        </div>
+                        <div class="wrapper__main__box text-center">
+                            <p class="weight-600">انتخاب درگاه </p>
+                            <div class="form-check margin-bottom-10">
+                                <label>
+                                    <input v-model="air.type" value="0" type="radio" name="type1" checked> <span
+                                        class="label-text">بانک ملت
+                                        </span>
+                                </label>
+                                <label>
+                                    <input v-model="air.type" value="1" type="radio" name="type1"> <span
+                                        class="label-text"> بانک پارسیان
+                                        </span>
+                                </label>
+                            </div>
                             <button class="btn btn-success" style="width:200px">ثبت و خرید بلیط</button>
                         </div>
                         <div class="alert alert-danger">
-                            لطفا پیش از پرداخت، اطلاعات مسافرین و جزئیات پرواز خود را مجددا بررسی بفرمایید و از صحت آنها مطمئن شوید.
+                            لطفا پیش از پرداخت، اطلاعات مسافرین و جزئیات پرواز خود را مجددا بررسی بفرمایید و از صحت آنها
+                            مطمئن شوید.
                         </div>
                     </div>
                     <div class="col-md-4 col-xs-12 pull-right">
