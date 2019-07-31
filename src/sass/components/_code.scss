@@ -768,6 +768,8 @@ a {
 
 .toast-success {
     background-color: #00a126;
+    -webkit-box-shadow:none !important;
+    box-shadow:none !important;
 } 
 
 button.toast-close-button{
