@@ -60,6 +60,10 @@ $(function () {
 
   generateLadda()
 
+  $(window).scroll(function(){
+    scroll_menu()
+  });
+  scroll_menu();
 })
 
 var app = new Vue({
@@ -88,4 +92,14 @@ function generateLadda() {
       l.stop()
     }, 3000);
   });
+}
+
+function scroll_menu() {
+  var scroll = $(this).scrollTop();
+  if(scroll > 58) {
+    $('.menu').addClass('navbar-scroll');
+  }
+  else {
+    $('.menu').removeClass('navbar-scroll');
+  }
 }

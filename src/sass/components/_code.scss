@@ -809,3 +809,16 @@ button.toast-close-button{
     border-bottom: 6px solid #a10b0b;
     transform: rotate(178deg);
 }
+
+.navbar-scroll {
+    position: fixed;
+    background-color: #fff!important;
+    top: -100px;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    transition: transform .5s,-webkit-transform .5s;
+    box-shadow: 0 10px 40px rgba(0,0,0,.05);
+}
