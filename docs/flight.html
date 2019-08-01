@@ -34,7 +34,7 @@
     <link href="./lib/toaster/toastr.min.css" rel="stylesheet" />
     <script src="./lib/toaster/toastr.min.js"></script>
 
-    
+
     <script src="./lib/laddaButton/spin.min.js"></script>
     <script src="./lib/laddaButton/ladda.min.js"></script>
 
@@ -155,22 +155,23 @@
                     <div class="col-md-2 col-sm-6">
                         <div class="form-group">
                             <i class="fa fa-calendar-minus-o"></i>
-                            <input type="text" id="date-3" autocomplete="off" class="form-control"
-                                placeholder="تاریخ رفت" />
+                            <input type="text" autocomplete="off" data-role='date-gregorian' autocomplete="off"
+                                class="form-control" placeholder="تاریخ رفت" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-6">
                         <div class="form-group">
                             <i class="fa fa-calendar-minus-o"></i>
-                            <input type="text" :disabled="air.type == 0 && air.name=='Inside'" id="date-4"
-                                autocomplete="off" class="form-control" placeholder="تاریخ برگشت" />
+                            <input type="text" autocomplete="off" :disabled="air.type == 0 && air.name=='Outside'"
+                                data-role='date-gregorian' autocomplete="off" class="form-control"
+                                placeholder="تاریخ برگشت" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-6">
                         <div class="form-group dropdown">
                             <i class="fa fa-user-circle-o"></i>
-                            <input type="text" data-toggle="dropdown" class="form-control dropdown-toggle"
-                                placeholder="مسافران (۱ بزرگسال)" />
+                            <input type="text" readonly autocomplete="off" data-toggle="dropdown"
+                                class="form-control dropdown-toggle" placeholder="مسافران (۱ بزرگسال)" />
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu__item">
                                     <span class="dropdown-menu__item__title">بزرگسال</span>
@@ -207,8 +208,11 @@
                     </div>
                     <div class="col-md-2 col-sm-6">
                         <div class="form-group">
-                            <button class="btn btn-success btn-block">جستجو <i class="fa fa-search"
-                                    style="margin-right: 5px;font-size: 10px;"></i></button>
+                            <button class="btn btn-success btn-block ladda-button" data-style="zoom-in">
+                                <span class="ladda-label">
+                                    جستجو <i class="fa fa-search" style="margin-right: 5px;font-size: 10px;"></i>
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -266,7 +270,7 @@
                                     <h2 class="wrapper__main__box__item__price__isgreen">1,123,000 تومان</h2>
                                     <button class="btn btn-success btn-block ladda-button" data-style="zoom-in">
                                         <span class="ladda-label">
-                                            خرید بلیط 
+                                            خرید بلیط
                                         </span>
                                     </button>
                                 </div>
@@ -338,7 +342,7 @@
                                     <h2 class="wrapper__main__box__item__price__isgreen">1,123,000 تومان</h2>
                                     <button class="btn btn-success btn-block ladda-button" data-style="zoom-in">
                                         <span class="ladda-label">
-                                            خرید بلیط 
+                                            خرید بلیط
                                         </span>
                                     </button>
                                 </div>
@@ -410,7 +414,7 @@
                                     <h2 class="wrapper__main__box__item__price__isgreen">1,123,000 تومان</h2>
                                     <button class="btn btn-success btn-block ladda-button" data-style="zoom-in">
                                         <span class="ladda-label">
-                                            خرید بلیط 
+                                            خرید بلیط
                                         </span>
                                     </button>
                                 </div>
@@ -482,7 +486,7 @@
                                     <h2 class="wrapper__main__box__item__price__isgreen">1,123,000 تومان</h2>
                                     <button class="btn btn-success btn-block ladda-button" data-style="zoom-in">
                                         <span class="ladda-label">
-                                            خرید بلیط 
+                                            خرید بلیط
                                         </span>
                                     </button>
                                 </div>
@@ -554,7 +558,7 @@
                                     <h2 class="wrapper__main__box__item__price__isgreen">1,123,000 تومان</h2>
                                     <button class="btn btn-success btn-block ladda-button" data-style="zoom-in">
                                         <span class="ladda-label">
-                                            خرید بلیط 
+                                            خرید بلیط
                                         </span>
                                     </button>
                                 </div>
@@ -626,7 +630,7 @@
                                     <h2 class="wrapper__main__box__item__price__isgreen">1,123,000 تومان</h2>
                                     <button class="btn btn-success btn-block ladda-button" data-style="zoom-in">
                                         <span class="ladda-label">
-                                            خرید بلیط 
+                                            خرید بلیط
                                         </span>
                                     </button>
                                 </div>

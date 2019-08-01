@@ -1,7 +1,7 @@
 $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 
-  $('.dropdown-menu').on('click', function (event) {   
+  $('.dropdown-menu').on('click', function (event) {
     event.stopPropagation();
   });
 
@@ -26,20 +26,20 @@ $(function () {
   }
 
   $("[data-role='date-persian']").pDatepicker({
-    autoClose:true,
-    minDate:new Date(),
-    format:"dddd D MMMM YYYY",
-    selectedDate:null,
-    initialValue:false,
+    autoClose: true,
+    minDate: new Date(),
+    format: "dddd D MMMM YYYY",
+    selectedDate: null,
+    initialValue: false,
   });
 
   $("[data-role='date-gregorian']").pDatepicker({
-    autoClose:true,
-    minDate:new Date(),
-    format:"dddd D MMMM YYYY",
-    calendarType:'gregorian',
-    selectedDate:null,
-    initialValue:false
+    autoClose: true,
+    minDate: new Date(),
+    format: "dddd D MMMM YYYY",
+    calendarType: 'gregorian',
+    selectedDate: null,
+    initialValue: false
   });
 
   $('.form-control').val('')
@@ -54,18 +54,12 @@ $(function () {
     "timeOut": "5000",
   }
 
-  setTimeout(function(){
+  setTimeout(function () {
     toastr.success('سلام خوش آمدید ')
   }, 2000);
 
-  $('.ladda-button').click(function(e){
-    e.preventDefault();
-    var l = Ladda.create(this);
-    l.start();
-    setTimeout(function(){
-      l.stop()
-    }, 3000);
- });
+  generateLadda()
+
 })
 
 var app = new Vue({
@@ -80,6 +74,18 @@ var app = new Vue({
     changeAir: function (name) {
       this.air.name = name;
       this.air.type = 0;
+      generateLadda()
     }
   },
 })
+
+function generateLadda() {
+  $('.ladda-button').click(function (e) {
+    e.preventDefault();
+    var l = Ladda.create(this);
+    l.start();
+    setTimeout(function () {
+      l.stop()
+    }, 3000);
+  });
+}
