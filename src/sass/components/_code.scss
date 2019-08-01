@@ -779,3 +779,7 @@ button.toast-close-button{
 .ladda-button {
     direction: ltr;
 }
+
+.datepicker-container .header::before {
+    background-color: transparent !important;
+}
